@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ruska';
+  src: url('/fonts/Ruska-Regular.woff2') format('woff2'),
+       url('/fonts/Ruska-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Rest of your existing CSS */
+
+/* Modern iOS-style smooth transitions */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* iOS-style button active state */
+.ios-btn-active:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* ... (rest of your existing CSS) ... */
